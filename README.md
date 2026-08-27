@@ -26,7 +26,7 @@ An AI-powered application that allows users to interact with a YouTube video by 
 
 ## 🛠️ Tech Stack
 
-- Python
+- Python > 3.14
 - Streamlit
 - LangChain
 - FAISS
@@ -37,8 +37,27 @@ An AI-powered application that allows users to interact with a YouTube video by 
 
 ## ⚙️ Setup
 
+Create a `.env` file in the same project directory and add the following values:
+
+```env
+OPENAI_API_KEY=<YOUR OPENAI API KEY>
+GROQ_API_KEY=<YOUR GROQ API KEY>
+
+chat_llm=groq
+# chat_llm=open_api
+
+
 ```bash
 git clone https://github.com/<your-username>/YouTube-Analyser-Agent.git
 cd YouTube-Analyser-Agent
 pip install -r requirements.txt
 streamlit run main.py
+```
+
+### 🌐 Access the Application
+
+After starting the Streamlit application, open your browser and visit:
+
+**http://localhost:8501**
+
+You can now access and interact with the application.
