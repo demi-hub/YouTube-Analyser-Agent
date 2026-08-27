@@ -1,2 +1,44 @@
-# YouTube-Analyser-Agent
-Given a YouTube video link, the agent model is created from the video content, allowing users to ask questions and get answers based on the video.
+# YouTube Analyser Agent
+
+An AI-powered application that allows users to interact with a YouTube video by asking questions about its content.
+
+## Features
+
+- Extracts transcripts from YouTube videos
+- AI-powered question answering
+- Semantic search using FAISS
+- Retrieval-Augmented Generation (RAG)
+- Hugging Face embeddings
+- Supports OpenAI and Groq LLMs
+- Interactive Streamlit interface
+- Handles transcript and processing errors
+- Automatically cleans up temporary transcript files
+
+## 🏗️ How It Works
+
+1. Enter a YouTube video URL.
+2. Extract the video transcript.
+3. Split the transcript into smaller chunks.
+4. Generate embeddings using Hugging Face.
+5. Store embeddings in a FAISS vector database.
+6. Retrieve relevant content based on the user's question.
+7. Generate a concise answer using the selected LLM.
+
+## 🛠️ Tech Stack
+
+- Python
+- Streamlit
+- LangChain
+- FAISS
+- Hugging Face Embeddings
+- OpenAI / Groq
+- YouTube Transcript API
+- Pytube
+
+## ⚙️ Setup
+
+```bash
+git clone https://github.com/<your-username>/YouTube-Analyser-Agent.git
+cd YouTube-Analyser-Agent
+pip install -r requirements.txt
+streamlit run main.py
